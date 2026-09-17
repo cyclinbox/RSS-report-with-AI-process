@@ -501,6 +501,10 @@ def main():
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(report)
     print(f"File saved: {output_file}")
+    
+    # Optional HTML conversion with pandoc.
+    html_path = convert_markdown_to_html(output_file, output_dir, fileprefix)
+    
     # Save json file
     json_text = json.dumps(categorized,ensure_ascii=False,indent="\t")
     output_file = os.path.join(output_dir, fileprefix+".json")
@@ -508,8 +512,6 @@ def main():
         f.write(json_text)
     print(f"File saved: {output_file}")
 
-    # Optional HTML conversion with pandoc.
-    html_path = convert_markdown_to_html(output_file, output_dir, fileprefix)
 
     # Optional email delivery. HTML is preferred when pandoc is available;
     # otherwise the Markdown version is sent.
