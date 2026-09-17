@@ -1,0 +1,54 @@
+app:
+  opml_path: "feed-rss-list.opml"
+  day_limit: 8
+  output_dir: "outputs"
+  output_language: "zh" # zh for simplified Chinese, en for English
+
+llm:
+  endpoint_url: "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+  model_id: "qwen-flash"
+  auth_key: "sk-3dcf23d949bb426ebda8bf3aa916ab9f"
+  timeout: 120
+
+topics:
+  Aging:
+    positive_keywords:
+      - aging
+      - ageing
+      - senescence
+      - longevity
+      - lifespan
+      - age-related
+    negative_keywords:
+      - imaging
+      - managing
+      - packaging
+      - staging
+      - messaging
+  Longevity:
+    positive_keywords:
+      - longevity
+      - lifespan
+      - life extension
+      - healthspan
+    negative_keywords: []
+  Evolution:
+    positive_keywords:
+      - evolution
+      - selection
+      - evol
+      - phylo
+      - speciation
+      - adaptation
+    negative_keywords: []
+
+email:
+  enabled: true
+  smtp_server: "smtp.qq.com"
+  smtp_port: 465
+  sender: "1738296705@qq.com"
+  password: "ycapvqcvimwbgfgb"
+  receivers:
+    - "1738296705@qq.com"
+    - "zhangwanyu22@mails.ucas.ac.cn"
+  subject_prefix: "RSS AI Report"

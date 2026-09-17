@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+<head>
+<title>Feed Subscriptions</title>
+</head>
+<body>
+      <outline text="Nature" title="Nature" type="rss" 
+            xmlUrl="https://www.nature.com/nature.rss" htmlUrl="http://feeds.nature.com/nature/rss/current"/>
+      <outline text="Nature Reviews Genetics" title="Nature Reviews Genetics" type="rss" 
+            xmlUrl="https://www.nature.com/nrg.rss" htmlUrl="http://feeds.nature.com/nrg/rss/current"/>
+      <outline text="Nature Reviews Drug Discovery" title="Nature Reviews Drug Discovery" type="rss" 
+            xmlUrl="https://www.nature.com/nrd.rss" htmlUrl="http://feeds.nature.com/nrd/rss/current"/>
+      <outline text="Nature Reviews Psychology" title="Nature Reviews Psychology" type="rss" 
+            xmlUrl="https://www.nature.com/nrpsychol.rss" htmlUrl="http://feeds.nature.com/nrpsychol/rss/current"/>
+      <outline text="Nature Human Behaviour" title="Nature Human Behaviour" type="rss" 
+            xmlUrl="https://www.nature.com/nathumbehav.rss" htmlUrl="http://feeds.nature.com/nathumbehav/rss/current"/>
+      <outline text="Nature Genetics" title="Nature Genetics" type="rss" 
+            xmlUrl="https://www.nature.com/ng.rss" htmlUrl="http://feeds.nature.com/ng/rss/current"/>
+      <outline text="Nature Cell Biology" title="Nature Cell Biology" type="rss" 
+            xmlUrl="https://www.nature.com/ncb.rss" htmlUrl="http://feeds.nature.com/ncb/rss/current"/>
+      <outline text="Nature Ecology &#38; Evolution" title="Nature Ecology &#38; Evolution" type="rss" 
+            xmlUrl="https://www.nature.com/natecolevol.rss" htmlUrl="http://feeds.nature.com/natecolevol/rss/current"/>
+      <outline text="Nature Medicine" title="Nature Medicine" type="rss" 
+            xmlUrl="https://www.nature.com/nm.rss" htmlUrl="http://feeds.nature.com/nm/rss/current"/>
+      <outline text="Nature Methods" title="Nature Methods" type="rss" 
+            xmlUrl="https://www.nature.com/nmeth.rss" htmlUrl="http://feeds.nature.com/nmeth/rss/current"/>
+      <outline text="AAAS: Science" title="AAAS: Science: Table of Contents" type="rss" 
+            xmlUrl="https://www.science.org/action/showFeed?type=etoc&amp;feed=rss&amp;jc=science" htmlUrl="https://www.science.org/loi/science?af=R"/>
+      <outline text="AAAS: Science Advances" title="Science Advances" type="rss" 
+            xmlUrl="https://www.science.org/action/showFeed?type=etoc&amp;feed=rss&amp;jc=sciadv" htmlUrl="https://www.science.org/loi/sciadv?af=R"/>
+      <outline text="PLOS Computational Biology" title="PLOS Computational Biology" type="rss" 
+            xmlUrl="https://journals.plos.org/ploscompbiol/feed/atom" htmlUrl="https://journals.plos.org/ploscompbiol/"/>
+      <outline text="PLOS Genetics" title="PLOS Genetics" type="rss" 
+            xmlUrl="https://journals.plos.org/plosgenetics/feed/atom" htmlUrl="https://journals.plos.org/plosgenetics/"/>
+      <outline text="PLOS Biology" title="PLOS Biology" type="rss" 
+            xmlUrl="https://journals.plos.org/plosbiology/feed/atom" htmlUrl="https://journals.plos.org/plosbiology/"/>
+      <outline text="PLOS One" title="PLOS One" type="rss" 
+            xmlUrl="https://journals.plos.org/plosone/feed/atom" htmlUrl="https://journals.plos.org/plosone/"/>
+      <outline text="Cell - current" title="Cell - current" type="rss" 
+            xmlUrl="http://www.cell.com/cell/current.rss" htmlUrl="https://www.cell.com/cell/current?publicationCode=cell&amp;rss=yes"/>
+      <outline text="Cell Metabolism - current" title="Cell Metabolism - current" type="rss" 
+            xmlUrl="http://www.cell.com/cell-metabolism/current.rss" htmlUrl="https://www.cell.com/cell-metabolism/current?publicationCode=cmet&amp;rss=yes"/>
+      <outline text="EMBO - Latest Results" title="EMBO - Latest Results" type="rss" 
+            xmlUrl="https://link.springer.com/search.rss?sortBy=newestFirst&amp;search-within=Journal&amp;facet-journal-id=44318" htmlUrl="http://link.springer.com"/>
+</body>
+</opml>
