@@ -7,7 +7,7 @@ app:
 llm:
   endpoint_url: "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
   model_id: "qwen-flash"
-  auth_key: "sk-3dcf23d949bb426ebda8bf3aa916ab9f"
+  auth_key: "sk-...." # Replace with your own auth key!!!
   timeout: 120
 
 topics:
@@ -25,13 +25,6 @@ topics:
       - packaging
       - staging
       - messaging
-  Longevity:
-    positive_keywords:
-      - longevity
-      - lifespan
-      - life extension
-      - healthspan
-    negative_keywords: []
   Evolution:
     positive_keywords:
       - evolution
@@ -44,11 +37,13 @@ topics:
 
 email:
   enabled: true
-  smtp_server: "smtp.qq.com"
+  smtp_server: "smtp.qq.com" # If you use other email, please change smtp server address
   smtp_port: 465
-  sender: "1738296705@qq.com"
-  password: "ycapvqcvimwbgfgb"
+  sender: "yourname@qq.com" # Replace with your account
+  password: "......" # Replace with your email client password
   receivers:
-    - "1738296705@qq.com"
-    - "zhangwanyu22@mails.ucas.ac.cn"
+    - "receiver1@aaa.com"
+    - "receiver2@bbb.com"
+    - "......" # Replace with exact receivers
   subject_prefix: "RSS AI Report"
+
