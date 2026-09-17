@@ -254,6 +254,10 @@ def process_single_article(title, journal, published, abstract_text, article_tex
         "Title": "The translation of article title into (-language-)",
         "Type": "Research|Review|Method|Tool|Other",
         "Abstract_translation": "The translation of the abstract into (-language-)",
+        "Background": "The background of this article",
+        "Goal": "The research target of this article",
+        "Result": "The result of this article",
+        "Limitation": "The limitation and discussion of this article",
         "Core_Problem": "A statement of the main scientific questions, keep all in one line",
         "Meth_Chllg": "A statement of the main technical challenges, keep all in one line",
         "Innovative_Method": "A statement of article's innovative methods, keep all in one line",
@@ -457,15 +461,32 @@ def main():
                         report += f"- **AI Analysis**\n\n"
                         report += f"| **Field** | **Content** |\n"
                         report += f"|:----------|:------------|\n"
-                        report += f"| **Title**| {ai_report['Title']}|\n"
-                        report += f"| **Type** | {ai_report['Type']}|\n"
-                        report += f"| **Abstract** | {ai_report['Abstract_translation']}|\n"
-                        report += f"| **Core Problem**| {ai_report['Core_Problem']}|\n"
-                        report += f"| **Challenge**| {ai_report['Meth_Chllg']}|\n"
-                        report += f"| **Method**| {ai_report['Innovative_Method']}|\n"
-                        report += f"| **Data**| {ai_report['Is_data']} ({ai_report['data']})|\n"
-                        report += f"| **Code**| {ai_report['Is_code']} ({ai_report['code']})|\n"
-                        report += f"| **Conclusions**  | {ai_report['Key_Conclusions']}|\n\n"
+                        try:    report += f"| **Title**| {ai_report['Title']}|\n"
+                        except: pass
+                        try:    report += f"| **Type** | {ai_report['Type']}|\n"
+                        except: pass
+                        try:    report += f"| **Abstract** | {ai_report['Abstract_translation']}|\n"
+                        except: pass
+                        try:    report += f"| **Background** | {ai_report['Background']}|\n"
+                        except: pass
+                        try:    report += f"| **Goal** | {ai_report['Goal']}|\n"
+                        except: pass
+                        try:    report += f"| **Result** | {ai_report['Result']}|\n"
+                        except: pass
+                        try:    report += f"| **Limitation** | {ai_report['Limitation']}|\n"
+                        except: pass
+                        try:    report += f"| **Core Problem**| {ai_report['Core_Problem']}|\n"
+                        except: pass
+                        try:    report += f"| **Challenge**| {ai_report['Meth_Chllg']}|\n"
+                        except: pass
+                        try:    report += f"| **Method**| {ai_report['Innovative_Method']}|\n"
+                        except: pass
+                        try:    report += f"| **Data**| {ai_report['Is_data']} ({ai_report['data']})|\n"
+                        except: pass
+                        try:    report += f"| **Code**| {ai_report['Is_code']} ({ai_report['code']})|\n"
+                        except: pass
+                        try:    report += f"| **Conclusions**  | {ai_report['Key_Conclusions']}|\n\n"
+                        except: pass
                     else:
                         report += "- AI analysis failed for this article.\n\n"
         ## Export a copy in Excel file

@@ -43,18 +43,25 @@ def check_curl(): # check if system installed curl. If curl is installed, we use
 def extract_page_with_curl(url):
     localtime = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     filename = f"temp_web_page_{localtime}.html"
-    command = f"curl -k -L -s {url} -o {filename}"
+    command = f'curl -k -L -s "{url}" -o "{filename}"'
     # extract page
     os.system(command)
-    with open(filename,'r',encoding='utf-8') as f:
-        txt = f.read()
+    try:
+        with open(filename,'r',encoding='utf-8') as f:
+            txt = f.read()
+    except Exception as e:
+        print(f"Some thing wrong with curl. message: {e}")
+        txt = ""
     # clean temp file
     if(sys.platform == 'win32'):command = f'del {filename}'
     else:                       command = f'rm  {filename}'
     os.system(command)
     # parse html file
-    bs4obj = BeautifulSoup(txt,'lxml')
-    page_content = bs4obj.get_text().strip().replace("\n\n","\n").replace("\n\n","\n").replace("\n\n","\n")
+    if(len(txt)>0):
+        bs4obj = BeautifulSoup(txt,'lxml')
+        page_content = bs4obj.get_text().strip().replace("\n\n","\n").replace("\n\n","\n").replace("\n\n","\n")
+    else:
+        page_content = ""
     return page_content
 
 
