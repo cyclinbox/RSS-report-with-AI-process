@@ -9,6 +9,7 @@
 - 简化 `libqwen.py`，只保留核心的 HTTP JSON 调用。
 - 检测 Pandoc，并在可用时额外输出 HTML 报告。
 - 增加邮件发送能力，可在 YAML 中开关并配置收件人。
+- 支持作为智能体SKILL安装，安装文件为 `./SKILL.md`
 
 ## 依赖库
 
